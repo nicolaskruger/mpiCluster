@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo service nfs-kernel-server restart
+cat script.ssh | head -2 | tail -1 >> log
+echo '' >>log
