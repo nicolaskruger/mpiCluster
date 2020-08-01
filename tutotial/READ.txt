@@ -4,7 +4,7 @@ sudo apt install python3-pip
 
 #intala mpi4py
 sudo apt install libopenmpi-dev
-sudo pip install mpi4py
+sudo pip3 install mpi4py
 
 #instala openCV
 sudo apt-get install cmake
@@ -21,7 +21,9 @@ pip3 install mpi4py
 #executa 4 programas
 sudo apt install libopenmpi-dev
 sudo pip3 install mpi4py 3.0.1
-mpiexec -n 4 python script.py
+mpiexec -n 4 python3 script.py
+mpirun --hostfile maquinas python3 script.py
+mpirun --host m0,s0,s1,s2,s3 python3 script.py
 
 #compartilhamento de arquivo
 https://gist.github.com/estorgio/0c76e29c0439e683caca694f338d4003

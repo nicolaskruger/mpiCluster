@@ -1,0 +1,7 @@
+#conecção ssh
+ssh <nome>@<ip>
+ssh node@m0
+#liberar porta para o nfs-server
+sudo ufw allow 30:60000/tcp
+#clonar o git 
+git clone https://github.com/nicolaskruger/mpiCluster.git
